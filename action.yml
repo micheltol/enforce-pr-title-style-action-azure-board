@@ -1,0 +1,5 @@
+name: Enforce Pull Request Title includes Azure Board reference
+description: Check that a PR title starts with an Azure Board reference
+runs:
+  using: node12
+  main: dist/index.js
