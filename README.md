@@ -22,7 +22,7 @@ ab#1 Initialize Project
 Valid Pull Request titles must also include a short description after the Issue Key. Therefore the following is not valid. 
 
 ```
-AB-1
+AB#1
 ```
 
 This action will allow any valid Issue Key so long as it *could* be valid. It does not check if the referenced issue exists.
