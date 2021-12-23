@@ -58,7 +58,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPullRequestTitle = exports.getRegex = void 0;
 var core = __importStar(require("@actions/core"));
 var github = __importStar(require("@actions/github"));
-//import { EventPayloads } from "@octokit/webhooks";
 function run() {
     return __awaiter(this, void 0, void 0, function () {
         var title, regex;
