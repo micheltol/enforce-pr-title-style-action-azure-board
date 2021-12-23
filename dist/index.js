@@ -70,8 +70,7 @@ function run() {
                 core.debug(title);
                 core.debug(regex.toString());
                 if (!regex.test(title)) {
-                    core.debug("Regex " + regex + " failed with title " + title);
-                    core.info("Title Failed");
+                    core.info("Regex " + regex + " failed with title " + title);
                     core.setFailed("PullRequest title does not start with a AzureBoard Issue Key.");
                     return [2 /*return*/];
                 }
