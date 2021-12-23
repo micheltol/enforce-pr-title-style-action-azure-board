@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Enforce Azure Board Issue Key in Pull Request Title
-        uses: micheltol/enforce-pr-title-style-action-azure-board@v1.2.3
+        uses: micheltol/enforce-pr-title-style-action-azure-board@v2
