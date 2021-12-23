@@ -4,7 +4,7 @@ import * as github from "@actions/github";
 
 async function run() {
     try {
-        core.debug("Starting PR Title check for Jira Issue Key");
+        core.debug("Starting PR Title check for AzureBoard Issue Key");
         const title = getPullRequestTitle();
         const regex = getRegex();
 
@@ -14,7 +14,7 @@ async function run() {
         if (!regex.test(title)) {
             core.debug(`Regex ${regex} failed with title ${title}`);
             core.info("Title Failed");
-            core.setFailed("PullRequest title does not start with a AzureBoard identifier.");
+            core.setFailed("PullRequest title does not start with a AzureBoard Issue Key.");
             return;
         }
         core.info("Title Passed");
